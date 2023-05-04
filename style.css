@@ -1,0 +1,58 @@
+body{
+    /* background-color: #e6ebe9; */
+}
+.container{
+    background-color: #fff;
+    display: flex;
+}
+.container .panel1{
+    background-image: url(./images/90441-640x360-tower-640.jpg);
+}
+.container .panel2{
+    background-image: url(./images/Big-Ben-London-Attraction.jpg);
+}
+.container .panel3{
+    background-image: url(./images/madame-tussauds-london-yoda-640x360.webp);
+}
+.container .panel4{
+    background-image: url(./images/the-london-eye-640x360.jpg);
+}
+.container .panel5{
+    background-image: url(./images/westminster-abbey-640.jpg);
+}
+.container .panel6{
+    background-image: url(./images/58897-640x360-kensington-palace-640.jpg);
+}
+.container .panel7{
+    background-image: url(./images/sea-life-london-640x360.webp);
+}
+.container .panel8{
+    background-image: url(./images/emirates-airline-cable-car-640x360.jpg);
+}
+.container .panel{
+    background-size:cover;
+    flex: 1;
+    height: 97vh;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: all .3s ease-in;
+}
+.container .panel.active{
+    flex: 10;
+}
+.title{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: -70px;
+    opacity: 0;
+    transition: all .8s ease-in;
+}
+.container .panel.active .title{
+    opacity: 1;
+    transform: translateX(100px) scale(1.3);
+}
